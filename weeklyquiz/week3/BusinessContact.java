@@ -15,4 +15,9 @@ public class BusinessContact extends Contact{
         super.setPhoneNumber(phoneNumber);
         this.company = company;
     }
+
+    @Override
+    public String toString() {
+        return String.format("%s,회사: %s",super.toString(),company);
+    }
 }
